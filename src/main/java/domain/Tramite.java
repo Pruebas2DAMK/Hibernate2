@@ -1,6 +1,8 @@
 package domain;
 
+import javax.annotation.processing.Generated;
 import javax.persistence.*;
+import javax.persistence.metamodel.StaticMetamodel;
 import java.sql.Timestamp;
 
 @Entity
@@ -43,3 +45,4 @@ public class Tramite {
         return idTramite +" "+tipoTramite+" "+fechaTramite;
     }
 }
+
