@@ -18,7 +18,7 @@ public class Imagen {
     private Timestamp fechaCreacion;
 
     //ManyToMany Bidireccional
-    @ManyToMany(mappedBy = "imagenes")
+    @ManyToMany(mappedBy = "imagenes",fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
     private List<Inmueble> inmuebles = new ArrayList<Inmueble>();
 
     public Imagen(){
