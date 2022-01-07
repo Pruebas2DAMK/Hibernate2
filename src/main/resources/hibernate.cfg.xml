@@ -8,6 +8,7 @@
         <property name="connection.password">root</property>
         <!--Database dialect-->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.autocommit">true</property>
         <!-- Verbose SQL Query's -->
         <property name="hibernate.show_sql">true</property>
         <!-- Mapeo basado en anotaciones -->
