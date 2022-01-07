@@ -4,6 +4,7 @@ import javax.annotation.processing.Generated;
 import javax.persistence.*;
 import javax.persistence.metamodel.StaticMetamodel;
 import java.sql.Timestamp;
+import java.util.Set;
 
 @Entity
 @Table(name = "tramite")
@@ -17,6 +18,10 @@ public class Tramite {
     //relacion bidireccional
     @OneToOne(mappedBy = "tramite",cascade = CascadeType.REMOVE) //borrado en cascada
     private Presupuesto presupuesto;
+
+    //relacion oneToMany
+    @OneToMany(mappedBy = "tramite")
+    private Set<DiarioCliente> diarioCliente;
 
     public Tramite(){ }
 

@@ -14,6 +14,9 @@
         <!-- Mapeo basado en anotaciones -->
         <mapping class="domain.Tramite"></mapping>
         <mapping class="domain.Presupuesto"></mapping>
+        <mapping class="domain.DiarioCliente"></mapping>
+        <mapping class="domain.Inmueble"></mapping>
+        <mapping class="domain.Imagen"></mapping>
         <!--<mapping resource="tramite.hbm.xml"/>-->
     </session-factory>
 </hibernate-configuration>
