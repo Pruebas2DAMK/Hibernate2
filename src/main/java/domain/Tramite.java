@@ -14,7 +14,16 @@ public class Tramite {
     private String tipoTramite;
     private Timestamp fechaTramite;
 
+    //relacion bidireccional
+    @OneToOne(mappedBy = "tramite")
+    private Presupuesto presupuesto;
+
     public Tramite(){ }
+
+    public Tramite(String tipoTramite, Timestamp timestamp) {
+        this.tipoTramite = tipoTramite;
+        this.fechaTramite = timestamp;
+    }
 
     public int getIdTramite(){
         return idTramite;

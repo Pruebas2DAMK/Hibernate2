@@ -10,10 +10,12 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class Tramite_ {
 
 	public static volatile SingularAttribute<Tramite, Integer> idTramite;
+	public static volatile SingularAttribute<Tramite, Presupuesto> presupuesto;
 	public static volatile SingularAttribute<Tramite, Timestamp> fechaTramite;
 	public static volatile SingularAttribute<Tramite, String> tipoTramite;
 
 	public static final String ID_TRAMITE = "idTramite";
+	public static final String PRESUPUESTO = "presupuesto";
 	public static final String FECHA_TRAMITE = "fechaTramite";
 	public static final String TIPO_TRAMITE = "tipoTramite";
 

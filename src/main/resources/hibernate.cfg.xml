@@ -13,6 +13,7 @@
         <property name="hibernate.show_sql">true</property>
         <!-- Mapeo basado en anotaciones -->
         <mapping class="domain.Tramite"></mapping>
+        <mapping class="domain.Presupuesto"></mapping>
         <!--<mapping resource="tramite.hbm.xml"/>-->
     </session-factory>
 </hibernate-configuration>
