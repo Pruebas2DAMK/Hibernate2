@@ -16,6 +16,10 @@ public class Presupuesto {
     @JoinColumn(name = "Tramite_idTramite")
     private Tramite tramite;
 
+    public Presupuesto(){
+        //sin un constructor vacio cuidado con las querys ... ¯\_(-.-)_/¯ ... asi me he quedado despues de 15 minutos
+    }
+
     public Presupuesto(String s){
         this.lugar = s;
     }

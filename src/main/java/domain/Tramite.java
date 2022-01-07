@@ -15,7 +15,7 @@ public class Tramite {
     private Timestamp fechaTramite;
 
     //relacion bidireccional
-    @OneToOne(mappedBy = "tramite")
+    @OneToOne(mappedBy = "tramite",cascade = CascadeType.REMOVE) //borrado en cascada
     private Presupuesto presupuesto;
 
     public Tramite(){ }
